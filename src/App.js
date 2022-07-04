@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
     <Container>
-      <Navbar expand="lg" variant="primary" bg="dark">
+      <Navbar expand="lg" variant="dark" bg="primary">
         <Container>
-          <Navbar.Brand href="#">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#">Ristorante Con Fusion</Navbar.Brand>
         </Container>
       </Navbar>
     </Container>
