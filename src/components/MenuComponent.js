@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Media } from "reactstrap";
-import 'bootstrap/dist/css/bootstrap.css';
+
 
 
 class Menu extends React.Component {
@@ -48,12 +48,12 @@ class Menu extends React.Component {
   render() {
     const menu = this.state.dishes.map((dish) => {
       return (
-        <div key={dish.id} class="col-12 mt-5">
-        <Media tag="li">
+        <div key={dish.id} className="col-12 mt-5">
+        <Media tag="ul">
         <Media left middle>
         <Media object src={dish.image} alt={dish.name} />
         </Media>
-        <Media body class="ml-5">
+        <Media body className="ml-5">
         <Media heading>{dish.name}</Media>
         <p>{dish.description}</p>
         </Media>
@@ -63,8 +63,8 @@ class Menu extends React.Component {
     });
 
     return (
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
         <Media list>
         {menu}
         </Media>
