@@ -51,7 +51,7 @@ class Menu extends React.Component {
         <div key={dish.id} class="col-12 mt-5">
         <Media tag="li">
         <Media left middle>
-        <Media object stc={dish.image} alt={dish.name} />
+        <Media object src={dish.image} alt={dish.name} />
         </Media>
         <Media body class="ml-5">
         <Media heading>{dish.name}</Media>
