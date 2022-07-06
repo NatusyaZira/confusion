@@ -12,8 +12,14 @@ class Main extends Component {
 
     this.state = {
       dishes: DISHES
+      selectedDish: null
     };
   }
+
+  onDishSelect(dish) {
+     this.setState({ selectedDish: dish});
+  }
+
   render() {
     return (
       <div className="App">
@@ -22,7 +28,9 @@ class Main extends Component {
       <NavbarBrand href="#">Ristorante Con Fusion</NavbarBrand>
       </div>
       </Navbar>
-      <Menu dishes={this.state.dishes} />
+      <Menu dishes={this.state.dishes}
+      onClick={(dishId) => this.onDishSelect(dishId)} />
+      <DishDetail dish={} />
       </div>
     );
   }
